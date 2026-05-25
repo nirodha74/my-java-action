@@ -1,0 +1,12 @@
+name: My Java Action Test
+on: [push]
+
+jobs:
+  run-java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run the Custom Action
+        uses: ./
